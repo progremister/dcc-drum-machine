@@ -1,0 +1,22 @@
+.drum {
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+
+    &-pad {
+        width: 100%;
+        padding: 4rem;
+        font-size: 3rem;
+        font-weight: 600;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0,0,0, .250);
+
+        &:active {
+            background-color: darken($white, .55);
+        }
+    }
+}
